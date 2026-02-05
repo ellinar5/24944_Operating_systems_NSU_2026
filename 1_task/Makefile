@@ -13,3 +13,4 @@ clean:
 
 install: all
 	cp $(TARGET) /usr/local/bin/
+
