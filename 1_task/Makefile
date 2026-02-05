@@ -3,7 +3,7 @@ SRC = main.c
 CC = gcc
 CFLAGS = -Wall -g
 
-	all: $(TARGET)
+all: $(TARGET)
 
 $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
@@ -13,5 +13,6 @@ clean:
 
 install: all
 	cp $(TARGET) /usr/local/bin/
+
 
 
