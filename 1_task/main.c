@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
             case 'u':
                 {
                     struct rlimit rlim;
-                    if (getrlimit(RLIMIT_NPROC, &rlim) == -1) { 
+                    if (getrlimit(RLIMIT_FSIZE, &rlim) == -1) { 
                         perror("Failed with getrlimit for FILE"); 
                     }
                     else
@@ -135,4 +135,5 @@ int main(int argc, char *argv[])
         }
     }
     return 0;
+
 }
